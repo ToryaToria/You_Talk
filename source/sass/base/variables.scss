@@ -1,58 +1,47 @@
 // fonts
 
-$font-base: "Open Sans", "Arial", sans-serif;
+$font-base: "Montserrat", "Arial", sans-serif;
 
 
 // colors
-
-//  для текста
-$color-text-base: #444444;
-$color-text-second: #63d1bb;
-
 $color-black: #000000;
 $color-white: #ffffff;
 
-$color-link-hover: #46c1ae;
+//  для текста
+$color-text-base: #333333;
+$color-text-light: #494949;
 
+
+//  для кнопок
+
+$color-btn-bg: #35b3a9;
+$color-btn-bg-light: #e3f5f5;
+$color-btn-txt: #03b2a5;
 
 //  для фонов
 
-$color-bg-base: #f1f1f1;
-$color-bg-1: #63d1bb;
-$color-bg-2: #56c3b2;
-$color-bg-hero: #f9f9f9;
-
+$color-bg-base: #eff5fb;
+$color-bg-footer: #2963a3;
 
 //  для линий
 
-$color-line: #ececec;
-$color-line-wavy: #f1f1f1;
-/*wavy - волнистая*/
-$color-line-link: #62d1ba;
-$color-line-footer: #e5e5e5;
-$color-line-catalog: rgba(68, 68, 68, 0.1);
-
-$color-social: #231f20;
-
-$color-modal: #c6c6c6;
-
-//  для иконок
-
-$color-icon: #231f20;
-$color-icon-second: #149080;
-
+$color-line: #c1c5cd;
+$color-line-teg: #333333;
 
 //  для форм
-$color-form-dop: #62d1ba;
-$color-plaseholder: rgba(0, 0, 0, 0.3);
+$color-form-bg: rgba(157, 157, 157, 0.2);
+$color-form: #9d9d9d;
+$color-form-bg-img: #16c8bb;
 
 $color-error: rgba(236, 152, 152, 0.62);
 
 // WIDTH
 
-$desktop-width: 1150px;
-$tablet-width: 768px;
-$mobile-width: 320px;
+$desktop-width: 1440px;
+$tablet-width: 1024px;
+$mobile-width3: 768px;
+$mobile-width2: 414px;
+$mobile-width1: 320px;
 
 
 // * {

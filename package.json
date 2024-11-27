@@ -19,6 +19,8 @@
         "not < 0.2%"
     ],
     "scripts": {
+        "css": "gulp imgOpt",
+
         "imgOpt": "gulp imgOpt",
         "build": "gulp build",
         "start": "gulp",

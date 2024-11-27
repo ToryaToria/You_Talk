@@ -1,0 +1,67 @@
+.title {
+  /* h1 */
+  @include font ($size: 24px, $line-height: 32px, $weight: 600);
+
+  @include media-mobile2 {
+    @include font ($size: 32px, $line-height: 40px, $weight: 600);
+  }
+  @include media-mobile3 {
+    @include font ($size: 48px, $line-height: 56px, $weight: 600);
+  }
+}
+
+.title-blog {
+  /* h2 */
+  @include font ($size: 18px, $line-height: 26px, $weight: 600);
+}
+
+.text-base {
+  @include font ($size: 14px, $line-height: 20px);
+}
+
+.text-mini {
+  @include font ($size: 12px, $line-height: 18px, $color: $color-text-light);
+}
+
+.text-teg {
+  @include font ($size: 14px, $line-height: 20px, $weight: 700);
+}
+
+.text-btn {
+  @include font ($size: 16px, $line-height: 24px, $weight: 600, $color:$color-white);
+}
+
+.text-breadcrumbs {
+  @include font ($size: 12px, $line-height: 18px, $color: rgba(51, 51, 51, 0.7));
+  $letter-spacing: 0.025em;
+}
+
+.text-nav {
+  @include font ($size: 14px, $line-height: 114%, $weight: 500);
+  $letter-spacing: 0.025em;
+}
+
+.text-btn-psih {
+  @include font ($size: 16px, $line-height: 120%, $weight: 600, $color: $color-btn-txt);
+}
+
+.text-footer-nav {
+  @include font ($size: 16px, $line-height: 24px, $weight: 600, $color: $color-white);
+}
+
+.text-footer {
+  @include font ($size: 18px, $line-height: 26px, $weight: 600, $color: $color-white);
+}
+
+.text-form {
+  @include font ($size: 14px, $line-height: 20px, $color: $color-form);
+}
+
+.text-approval {
+  @include font ($size: 12px, $line-height: 18px, $color: rgba(255, 255, 255, 0.7));
+  $letter-spacing: 0.025em;
+}
+
+.text-copyright {
+  @include font ($size: 14px, $line-height: 20px, $color: rgba(255, 255, 255, 0.7));
+}

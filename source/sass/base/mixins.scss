@@ -1,13 +1,12 @@
-@mixin font ($family: $font-base, $size, $line-height, $weight: 400, $color: $color-black, $upper: none) {
+@mixin font ($size, $line-height, $weight: 400, $color: $color-text-base) {
 
   margin-top: 0;
   margin-bottom: 0;
-  font-family: $family;
+  font-family: $font-base;
   font-size: $size;
   line-height: $line-height;
   font-weight: $weight;
   color: $color;
-  text-transform: $upper;
 }
 
 @mixin list-reset ($padd-left: 0) {
@@ -29,8 +28,20 @@
   }
 }
 
-@mixin media-mobile {
-  @media (min-width: $mobile-width) {
+@mixin media-mobile3 {
+  @media (min-width: $mobile-width3) {
+    @content;
+  }
+}
+
+@mixin media-mobile2 {
+  @media (min-width: $mobile-width2) {
+    @content;
+  }
+}
+
+@mixin media-mobile1 {
+  @media (min-width: $mobile-width1) {
     @content;
   }
 }

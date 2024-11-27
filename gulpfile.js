@@ -233,15 +233,40 @@ export function server(done) {
 }
 
 export const build = gulp.series(
-    clean,
-    copy,
-    scssToCss,
-    gulp.parallel(
-        minif, copyImg, createStack
-    )
+    // clean,
+    // copy,
+    scssToCss
+    // ,
+    // gulp.parallel(
+    //     minif, copyImg, createStack
+    // )
 )
 
 export default gulp.series(
     build,
     server,
     watcher)
+
+
+// для начальной разработки в source
+
+export function serverSource(done) {
+    browser.init({ //инициализируем веб-сервер;
+        server: {
+            baseDir: './source', // указываем рабочую папку;
+            serveStaticOptions: { // упрощаем ввод в браузере адреса страницы — без расширения .html;
+                extensions: ['html'],
+            },
+        },
+        cors: true,
+        notify: false,
+        ui: false, //назначаем номер порта для пользовательского интерфейса веб-сервера;
+        open: true, //открываем в браузере главную страницу сайта.
+    });
+    done();
+}
+
+export const css = gulp.series(
+    scssToCss,
+    server
+)
