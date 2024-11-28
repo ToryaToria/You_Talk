@@ -61,7 +61,6 @@ export function cssMinif() {
             autoprefixer(), //добавляет вендорные префиксы CSS
             // csso()
         ]))
-
         .pipe(gulp.dest('build/css', { sourcemaps: '.' }))  //сохраняет итоговый файл в папку /build/css/
         .pipe(browser.stream())
 }

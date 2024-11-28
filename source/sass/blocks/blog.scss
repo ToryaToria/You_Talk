@@ -1,0 +1,11 @@
+.blog__title {
+  margin-bottom: 24px;
+
+  @include media-mobile3 {
+    margin-bottom: 32px;
+  }
+}
+
+.blog__list-tags {
+  margin-bottom: 24px;
+}

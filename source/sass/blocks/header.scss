@@ -1,0 +1,45 @@
+.header {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: flex;
+
+  @include media-mobile2 {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  @include media-mobile3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include media-tablet {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    gap: 32px;
+  }
+
+  @mixin media-desktop {
+  gap: 51px;
+  }
+}
+
+.header__hidden {
+  display: none;
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__list {
+  @include media-tablet {
+  @include list-reset;
+  display: flex;
+  gap: 16px;
+}
+
+@mixin media-desktop {
+  gap: 30px;
+  }
+}

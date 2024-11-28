@@ -1,0 +1,12 @@
+.tags {
+  @include list-reset;
+  display: flex;
+  gap: 8px;
+}
+
+.tags__item {
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border-radius: 24px;
+  border: 1px solid $color-line;
+}

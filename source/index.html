@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,216 +8,223 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="page__body text-base">
 
-  <header>
-    <nav>
+  <header class="header container">
     <a href="#">
       <img src="" alt="logo">
     </a>
-    <ul>
-      <li>
-        <a href="#">О нас</a>
-      </li>
-
-      <li>
-        <a href="#">Тарифы</a>
-      </li>
-
-      <li>
-        <a href="#"> Для бизнеса</a>
-      </li>
-
-      <li>
-        <a href="#">Психологам</a>
-      </li>
-
-      <li>
-        <a href="#">Сертификаты</a>
-      </li>
-
-      <li>
-        <a href="#">Материалы</a>
-      </li>
-
-      <li>
-        <a href="#">FAQ</a>
-      </li>
-    </ul>
-
-    <button type="button">Подобрать психолога</button>
-
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div>??? как сделать хлебные крошки!!!</div>
-      <h1>Блог</h1>
-      <ul>
+    <nav class="header__hidden">
+      <ul class="header__list">
         <li>
-          <a href="#">Все</a>
+          <a class="text-nav" href="#">О нас</a>
         </li>
 
         <li>
-          <a href="#">Самооценка и самопринятие</a>
+          <a class="text-nav" href="#">Тарифы</a>
         </li>
 
         <li>
-          <a href="#">Self</a>
+          <a class="text-nav" href="#"> Для бизнеса</a>
         </li>
 
         <li>
-          <a href="#">Чувства и эмоции</a>
+          <a class="text-nav" href="#">Психологам</a>
         </li>
 
         <li>
-          <a href="#">Тревога</a>
-        </li>
-        <li>
-
-          <a href="#">Упражнения</a>
+          <a class="text-nav" href="#">Сертификаты</a>
         </li>
 
         <li>
-          <a href="#">Психология питания</a>
+          <a class="text-nav" href="#">Материалы</a>
         </li>
 
         <li>
-          <a href="#">Насилие</a>
-        </li>
-
-        <li>
-          <a href="#">Личное здоровье</a>
+          <a class="text-nav" href="#">FAQ</a>
         </li>
       </ul>
 
-      <ul>
+      <button class="text-btn-psih" type="button">Подобрать психолога</button>
+
+    </nav>
+  </header>
+  <main class="page__main container">
+    <section class="blog">
+      <div>??? как сделать хлебные крошки!!!</div>
+      <h1 class="blog__title title">Блог</h1>
+      <ul class="blog__list-tags tags">
+        <li class="tags__item">
+          <a class="text-teg" href="#">Все</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Самооценка и самопринятие</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Self</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Чувства и эмоции</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Тревога</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Упражнения</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Психология питания</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Насилие</a>
+        </li>
+
+        <li class="tags__item">
+          <a class="text-teg" href="#">Личное здоровье</a>
+        </li>
+      </ul>
+
+      <ul class="">
         <li>
           <article>
-            <ul>
-              <li>
-                <a href="#">Самооценка и самопринятие</a>
+            <ul class="tags">
+              <li class="tags__item">
+                <a class="text-teg" href="#">Самооценка и самопринятие</a>
               </li>
 
-              <li>
-                <a href="#">Self</a>
+              <li class="tags__item">
+                <a class="text-teg" href="#">Self</a>
               </li>
             </ul>
 
             <img src="" alt="">
-            <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
-            <p>Автор: <cite>Лиза Файнтух</cite></p>
-            <p>Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-            <time datetime="2021-08-21">21.08.2021</time>
+            <h2 class="title-blog">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+            </h2>
+            <p class="text-mini">Автор: <cite>Лиза Файнтух</cite></p>
+            <p class="text-base">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+            <time class="text-mini" datetime="2021-08-21">21.08.2021</time>
           </article>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Self</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Self</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
-          <p>Автор: <cite>Екатерина Бельтюкова</cite></p>
-          <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
+          <h2 class="title-blog">Как не утонуть в тревоге и управлять своими страхами</h2>
+          <p class="text-mini">Автор: <cite>Екатерина Бельтюкова</cite></p>
+          <p class="text-base">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в
+            разных ситуациях
             по-разному обходиться ...</p>
-          <time datetime="2021-08-11">11.08.2021</time>
+          <time class="text-mini" datetime="2021-08-11">11.08.2021</time>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Самооценка и самопринятие</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Самооценка и самопринятие</a>
             </li>
-            <li>
-              <a href="#">Психология питания</a>
+
+        <li class="tags__item">
+              <a class="text-teg" href="#">Психология питания</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
-          <p>Автор: <cite>Лиза Файнтух</cite></p>
-          <p>Изначально термин «эмоциональное сфер и относился...</p>
-          <time datetime="2021-08-21">21.08.2021</time>
+          <h2 class="title-blog">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+          <p class="text-mini">Автор: <cite>Лиза Файнтух</cite></p>
+          <p class="text-base">Изначально термин «эмоциональное сфер и относился...</p>
+          <time class="text-mini" datetime="2021-08-21">21.08.2021</time>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Self</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Self</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
-          <p>Автор: <cite>Екатерина Бельтюкова</cite></p>
-          <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
+          <h2 class="title-blog">Как не утонуть в тревоге и управлять своими страхами</h2>
+          <p class="text-mini">Автор: <cite>Екатерина Бельтюкова</cite></p>
+          <p class="text-base">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в
+            разных ситуациях
             по-разному обходиться ...</p>
-          <time datetime="2021-08-11">11.08.2021</time>
+          <time class="text-mini" datetime="2021-08-11">11.08.2021</time>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Self</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Self</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Как управлять своими эмоциями: 8 шагов</h2>
-          <p>Автор: <cite>Екатерина Бельтюкова</cite></p>
-          <p>Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-          <time datetime="2021-08-21">07.08.2021</time>
+          <h2 class="title-blog">Как управлять своими эмоциями: 8 шагов</h2>
+          <p class="text-mini">Автор: <cite>Екатерина Бельтюкова</cite></p>
+          <p class="text-base">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом
+            написать!</p>
+          <time class="text-mini" datetime="2021-08-21">07.08.2021</time>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Self</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Self</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
-          <p>Автор: <cite>Лиза Файнтух</cite></p>
-          <p>Изначально термин «эмоциональное сфер и относился...</p>
-          <time datetime="2021-08-21">21.08.2021</time>
+          <h2 class="title-blog">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+          <p class="text-mini">Автор: <cite>Лиза Файнтух</cite></p>
+          <p class="text-base">Изначально термин «эмоциональное сфер и относился...</p>
+          <time class="text-mini" datetime="2021-08-21">21.08.2021</time>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Self</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Self</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
-          <p>Автор: <cite>Екатерина Бельтюкова</cite></p>
-          <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях
+          <h2 class="title-blog">Как не утонуть в тревоге и управлять своими страхами</h2>
+          <p class="text-mini">Автор: <cite>Екатерина Бельтюкова</cite></p>
+          <p class="text-base">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в
+            разных ситуациях
             по-разному обходиться ...</p>
-          <time datetime="2021-08-11">11.08.2021</time>
+          <time class="text-mini" datetime="2021-08-11">11.08.2021</time>
         </li>
 
         <li>
-          <ul>
-            <li>
-              <a href="#">Self</a>
+          <ul class="tags">
+            <li class="tags__item">
+              <a class="text-teg" href="#">Self</a>
             </li>
           </ul>
 
           <img src="" alt="">
-          <h2>Как управлять своими эмоциями: 8 шагов</h2>
-          <p>Автор: <cite>Екатерина Бельтюкова</cite></p>
-          <p>Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-          <time datetime="2021-08-07">07.08.2021</time>
+          <h2 class="title-blog">Как управлять своими эмоциями: 8 шагов</h2>
+          <p class="text-mini">Автор: <cite>Екатерина Бельтюкова</cite></p>
+          <p class="text-base">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом
+            написать!</p>
+          <time class="text-mini" datetime="2021-08-07">07.08.2021</time>
         </li>
       </ul>
 
-      <button type="button">Ещё</button>
+      <button class="text-btn" type="button">Ещё</button>
     </section>
   </main>
 
@@ -281,7 +288,7 @@
         <p>Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных
           данных», а также с Политикой конфиденциальности</p>
       </form>
-      
+
       <div>
         <img src="" alt="logo_sk">
         <span>Участник</span>
