@@ -1,0 +1,20 @@
+.card {
+  border: 1px solid $color-line-card;
+  border-radius: 16px;
+}
+
+.card__wrapp {
+  padding: 16px;
+}
+
+.card__title {
+  margin-bottom: 4px;
+}
+
+.card__avtor {
+  margin-bottom: 8px;
+}
+
+.card__text {
+  margin-bottom: 8px;
+}
