@@ -1,0 +1,56 @@
+// .icon,
+.icon::before {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon--smile::before {
+  content: '';
+  background-image: url('../../img/icons/icon_smile.svg');
+}
+
+.icon--unicorn::before {
+  content: '';
+  background-image: url('../../img/icons/icon_hors.svg');
+}
+
+.icon--vk::before {
+  display: block;
+
+  content: '';
+  background-image: url('../../img/icons/icon_vk.svg');
+  width: 20px;
+  height: 12px;
+  background-position: center;
+}
+
+.icon--telega::before {
+  display: block;
+
+  content: '';
+  background-image: url('../../img/icons/icon_tel.svg');
+  width: 16px;
+  height: 14px;
+  background-position: center;
+
+}
+
+.icon--tvitt::before {
+  display: block;
+
+  content: '';
+  background-image: url('../../img/icons/icon_tvitt.svg');
+  width: 16px;
+  height: 16px;
+  background-position: center;
+}
+
+.icon--dzen::before {
+  display: block;
+  content: '';
+  background-image: url('../../img/icons/icon_dzen.svg');
+  width: 32px;
+  height: 32px;
+  background-position: center;
+}

@@ -1,0 +1,23 @@
+.breadcrumbs {
+  @include list-reset;
+  display: flex;
+  gap: 4px;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+
+.breadcrumbs__item:not(:first-child)::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../../img/icons/icon_arr.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}

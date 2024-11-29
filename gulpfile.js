@@ -232,13 +232,12 @@ export function server(done) {
 }
 
 export const build = gulp.series(
-    // clean,
-    // copy,
-    scssToCss
-    // ,
-    // gulp.parallel(
-    //     minif, copyImg, createStack
-    // )
+    clean,
+    copy,
+    scssToCss,
+    gulp.parallel(
+        minif, copyImg, createStack
+    )
 )
 
 export default gulp.series(

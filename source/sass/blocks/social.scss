@@ -1,0 +1,13 @@
+.social__item {
+  box-sizing: border-box;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $color-bg-base;
+
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

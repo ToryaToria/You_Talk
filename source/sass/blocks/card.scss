@@ -1,6 +1,14 @@
 .card {
   border: 1px solid $color-line-card;
   border-radius: 16px;
+  position: relative;
+}
+
+.card__tags {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  
 }
 
 .card__wrapp {

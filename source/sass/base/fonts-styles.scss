@@ -6,6 +6,7 @@
   @include media-mobile2 {
     @include font ($size: 32px, $line-height: 40px, $weight: 600);
   }
+
   @include media-mobile3 {
     @include font ($size: 48px, $line-height: 56px, $weight: 600);
   }
@@ -26,20 +27,22 @@
 
 .text-teg {
   @include font ($size: 14px, $line-height: 20px, $weight: 700);
+  text-decoration: none;
 }
 
 .text-btn {
-  @include font ($size: 16px, $line-height: 24px, $weight: 600, $color:$color-white);
+  @include font ($size: 16px, $line-height: 24px, $weight: 600, $color: $color-white);
 }
 
 .text-breadcrumbs {
   @include font ($size: 12px, $line-height: 18px, $color: rgba(51, 51, 51, 0.7));
-  $letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-decoration: none;
 }
 
 .text-nav {
   @include font ($size: 14px, $line-height: 114%, $weight: 500);
-  $letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   text-decoration: none;
 }
 
@@ -49,9 +52,10 @@
 
 .text-footer-nav {
   @include font ($size: 16px, $line-height: 24px, $weight: 600, $color: $color-white);
+  text-decoration: none;
 }
 
-.text-footer {
+.text-label {
   @include font ($size: 18px, $line-height: 26px, $weight: 600, $color: $color-white);
 }
 
@@ -61,9 +65,10 @@
 
 .text-approval {
   @include font ($size: 12px, $line-height: 18px, $color: rgba(255, 255, 255, 0.7));
-  $letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
 }
 
 .text-copyright {
   @include font ($size: 14px, $line-height: 20px, $color: rgba(255, 255, 255, 0.7));
+  text-decoration: none;
 }
