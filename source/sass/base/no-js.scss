@@ -1,9 +1,9 @@
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .no-js .hamburger {
     display: none;
   }
 
-  body:not(.no-js) .main-nav__list-wrapp:not(.visible) {
+  body:not(.no-js) .header__hidden:not(.visible) {
     display: none;
   }
 }

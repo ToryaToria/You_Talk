@@ -1,5 +1,5 @@
 .visible {
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
 
 
     box-sizing: border-box;
@@ -7,9 +7,9 @@
 
     position: absolute;
     left: 0;
-    top: 57px;
+    top: 75px;
     z-index: 1;
     width: 100%;
-    background-color: $color-white;
+    background-color: $color-bg-base;
   }
 }

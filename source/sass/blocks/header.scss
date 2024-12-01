@@ -2,6 +2,8 @@
   padding-top: 11px;
   padding-bottom: 11px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @include media-mobile2 {
     padding-top: 19px;
@@ -20,26 +22,51 @@
   }
 
   @mixin media-desktop {
-  gap: 51px;
+justify-content: space-between;
   }
 }
 
 .header__hidden {
-  display: none;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  gap: 12px;
+
   @include media-tablet {
-    display: flex;
-    justify-content: space-between;
+flex-direction: row;
+gap: 20px;
+  }
+
+  @mixin media-desktop {
+    gap: 164px;
   }
 }
 
 .header__list {
-  @include media-tablet {
-  @include list-reset;
+  @include list-reset($padd-left: 15px);
+  padding: 15px;
   display: flex;
+  flex-direction: column;
   gap: 16px;
+  align-items: stretch;
+  background-color: $color-bg-teg;
+
+  @include media-tablet {
+    flex-direction: row;
+    // background-color: cadetblue;
+  }
+
+  @mixin media-desktop {
+    gap: 30px;
+  }
 }
 
-@mixin media-desktop {
-  gap: 30px;
-  }
+.header__item {
+  padding-bottom: 5px;
+  border-bottom: 1px solid $color-line;
+}
+
+.header__button {
+  margin: 0 auto;
 }
