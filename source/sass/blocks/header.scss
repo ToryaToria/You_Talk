@@ -21,8 +21,10 @@
     gap: 32px;
   }
 
-  @mixin media-desktop {
-justify-content: space-between;
+  @include media-desktop {
+    // justify-content: space-between;
+    gap: 164px;
+
   }
 }
 
@@ -34,12 +36,8 @@ justify-content: space-between;
   gap: 12px;
 
   @include media-tablet {
-flex-direction: row;
-gap: 20px;
-  }
-
-  @mixin media-desktop {
-    gap: 164px;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 

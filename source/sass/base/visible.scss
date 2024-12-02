@@ -4,12 +4,12 @@
 
     box-sizing: border-box;
     display: block;
-
+    border-bottom: 1px solid $color-line;
     position: absolute;
     left: 0;
     top: 75px;
     z-index: 1;
     width: 100%;
-    background-color: $color-bg-base;
+    background-color: $color-white;
   }
 }

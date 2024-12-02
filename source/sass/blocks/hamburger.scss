@@ -1,5 +1,4 @@
 .hamburger {
-
   @media (max-width: 1023px) {
 
     box-sizing: border-box;
@@ -11,73 +10,78 @@
 
     position: relative;
 
-    // background-color: $color-white;
-    background-color: red;
+    background-color: $color-white;
+    // background-color: rgb(9, 255, 0);
     cursor: pointer;
   }
 
-  @mixin media-tablet {
+  @include media-tablet {
     display: none;
-    // position: static;
-
-    // background-color: blueviolet;
   }
 }
 
 .hamburger--open {
   &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 2px;
-    width: 18px;
-    height: 2px;
+    @media (max-width: 1023px) {
+      content: "";
+      position: absolute;
+      display: block;
+      border-radius: 2px;
+      width: 18px;
+      height: 2px;
 
-    margin: 11px;
+      margin: 11px;
 
-    background-color: $color-btn-txt;
+      background-color: $color-btn-txt;
 
-    top: 1px;
-    left: 0;
+      top: 1px;
+      left: 0;
 
-    box-shadow: 0 5px 0 0 $color-btn-txt, 0 10px 0 0 $color-btn-txt;
+      box-shadow: 0 5px 0 0 $color-btn-txt, 0 10px 0 0 $color-btn-txt;
+    }
 
-    @mixin media-desktop {
+    @mixin media-tablet {
       display: none;
     }
   }
 }
 
 .hamburger--closed {
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 2px;
-    width: 18px;
-    height: 2px;
+  @media (max-width: 1023px) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-radius: 2px;
+      width: 18px;
+      height: 2px;
 
-    margin: 11px;
+      margin: 11px;
 
-    background-color: $color-btn-txt;
-    transform: rotate(-45deg);
-    top: 7px;
-    left: 0;
-  }
+      background-color: $color-btn-txt;
+      transform: rotate(-45deg);
+      top: 7px;
+      left: 0;
+    }
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 2px;
-    width: 18px;
-    height: 2px;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      border-radius: 2px;
+      width: 18px;
+      height: 2px;
 
-    margin: 11px;
+      margin: 11px;
 
-    background-color: $color-btn-txt;
-    transform: rotate(45deg);
-    top: 7px;
-    left: 0;
+      background-color: $color-btn-txt;
+      transform: rotate(45deg);
+      top: 7px;
+      left: 0;
+
+      @mixin media-tablet {
+        display: none;
+      }
+    }
   }
 }
