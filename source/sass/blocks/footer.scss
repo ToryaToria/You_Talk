@@ -26,6 +26,7 @@
   flex-direction: column;
   gap: 16px;
 }
+
 .footer__form {
   margin-bottom: 5px;
 }
@@ -37,19 +38,18 @@
 }
 
 .footer__field {
+  display: inline-block;
   box-sizing: border-box;
   height: 48px;
   padding: 14px 55px 14px 16px;
   background-color: $color-white;
   border: none;
-  border-radius: 4px;
-  margin-top: 8px;
-  margin-bottom: 12px;
+  border-radius: 4px 0 0 4px;
 }
 
 .footer__logo {
-display: block; 
-margin-bottom: 20px; 
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer__social-list {
@@ -63,4 +63,34 @@ margin-bottom: 20px;
   flex-direction: column;
   gap: 24px;
   margin-top: 20px;
+}
+
+.footer__btn {
+  display: none;
+
+  @include media-mobile2 {
+    display: inline-block;
+    width: 55px;
+    height: 48px;
+    background-color: $color-form-bg-img;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 0;
+    background-image:  url(../../img/icons/icon_email.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: 24px 24px;
+  }
+
+  @include media-mobile3 {
+    width: 64px;
+  }
+}
+
+.footer__wrapp-field {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  // justify-content: center;
 }

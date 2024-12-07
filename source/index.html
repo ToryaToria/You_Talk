@@ -125,6 +125,12 @@
               </li>
             </ul>
 
+            <picture>
+              <source media="(min-width:1440px)" srcset="./img/logo/logo-desk.svg" width="70" height="59">
+              <source media="(min-width:768px)" srcset="./img/logo/logo-tabl.svg" width="60" height="50">
+              <img class="logo-link__img" src="./img/logo/logo-mobile.svg" alt="логотип-картинка" width="33" height="38">
+            </picture>
+
             <img src="./img/blog1.jpg" alt="Эмоциональное выгорание" width="288" height="206">
             <div class="card__wrapp">
               <h2 class="card__title title-blog">Эмоциональное выгорание – стадии и симптомы, методы восстановления и
@@ -345,7 +351,11 @@
 
         <label class="text-label" for="email">Одно письмо в неделю со свежими новостями и акциями</label>
 
-        <input class="footer__field text-form" type="email" name="email" id="email" placeholder="Ваш e-mail">
+        <div class="footer__wrapp-field">
+          <input class="footer__field  text-form" type="email" name="email" id="email" placeholder="Ваш e-mail">
+
+          <button class="footer__btn" type="submit"></button>
+        </div>
 
         <p class="text-approval">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ №
           152-ФЗ «О персональных
