@@ -7,11 +7,11 @@
 
   @include media-tablet {
     padding-bottom: 60px;
-  } 
+  }
 
   @include media-desktop {
     padding-bottom: 96px;
-  } 
+  }
 }
 
 .blog__title {
@@ -25,21 +25,29 @@
 .blog__card {
   overflow: hidden;
 
-  @include media-mobile3 {
-  width: 48%;
+  &--hidden {
+    display: none;
 
-  &--big {
+    @include media-mobile3 {
+      display: block;
+    }
+  }
+
+  @include media-mobile3 {
+    width: 48%;
+
+    &--big {
       width: 100%;
     }
   }
 
   @include media-tablet {
     width: 31%;
-  
+
     &--big {
       width: 48%;
     }
-    }
+  }
 }
 
 .blog__list {
@@ -58,11 +66,11 @@
 
   @include media-tablet {
     margin-bottom: 35px;
-  } 
+  }
 
   @include media-desktop {
     margin-bottom: 56px;
-  } 
+  }
 }
 
 .blog__button {
