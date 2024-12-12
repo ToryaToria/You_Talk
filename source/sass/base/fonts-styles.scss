@@ -12,16 +12,47 @@
   }
 }
 
+.subtitle {
+  @include font ($size: 16px, $line-height: 24px, $weight: 600);
+  font-style: normal;
+
+}
+
+.text--article {
+  @include font ($size: 16px, $line-height: 24px, $weight: 500);
+}
+
+.text--q {
+  @include font ($size: 16px, $line-height: 24px);
+font-style: italic;
+}
+
+.text-signature { // подпись
+  @include font ($size: 14px, $line-height: 130%, $weight: 500, $color: $color-text-signature);
+  letter-spacing: 0.025em;
+
+}
+
 .title-blog {
   /* h2 */
   @include font ($size: 18px, $line-height: 26px, $weight: 600);
+}
+
+.title-paragraph {
+  /* h2 */
+  @include font ($size: 18px, $line-height: 26px, $weight: 600);
+
+  @include media-mobile2 {
+    @include font ($size: 24px, $line-height: 32px, $weight: 600);
+  }
 }
 
 .text-base {
   @include font ($size: 14px, $line-height: 20px);
 
   &--color {
-  color: $color-bg-base;  
+  color: $color-bg-base;
+  text-decoration: none;  
   }
 }
 

@@ -1,0 +1,76 @@
+.article--title {
+  margin-bottom: 8px;
+
+  @include media-mobile3 {
+    margin-bottom: 16px;
+  }
+}
+
+.article--autor {
+  margin-bottom: 16px;
+
+  @include media-mobile3 {
+    margin-bottom: 24px;
+  }
+}
+
+.article--img {
+  display: block;
+  margin-bottom: 16px;
+
+  @include media-mobile2 {
+    margin-bottom: 24px;
+  }
+
+  @include media-mobile3 {
+    margin-bottom: 12px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.article--subtitle {
+  margin-bottom: 8px;
+
+  @include media-mobile2 {
+    margin-bottom: 16px;
+  }
+}
+
+.article--list {
+  @include list-reset;
+
+  margin-bottom: 16px;
+
+  @include media-mobile2 {
+    margin-bottom: 24px;
+  }
+
+  @include media-mobile3 {
+    margin-bottom: 36px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.article--paragraph {
+  margin-bottom: 8px;
+
+  @include media-mobile2 {
+    margin-bottom: 16px;
+  }
+}
+
+.article--figure {
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  @include media-mobile2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

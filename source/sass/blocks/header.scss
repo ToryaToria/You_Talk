@@ -1,13 +1,22 @@
 .header {
   padding-top: 11px;
   padding-bottom: 11px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  border-bottom: 1px solid $color-bg-light;
+  margin-bottom: 24px;
+
+  &--article {
+    margin-bottom: 16px;
+  }
+
   @include media-mobile2 {
     padding-top: 19px;
     padding-bottom: 19px;
+    margin-bottom: 16px;
   }
 
   @include media-mobile3 {
@@ -30,6 +39,8 @@
 
 .header__hidden {
   padding-bottom: 16px;
+  background-color: $color-white;
+
   display: flex;
   flex-direction: column;
   // align-items: center;
@@ -48,7 +59,7 @@
   flex-direction: column;
   gap: 16px;
   align-items: stretch;
-  background-color: $color-bg-teg;
+  // background-color: $color-white;
 
   @include media-tablet {
     flex-direction: row;
@@ -63,6 +74,7 @@
 .header__item {
   padding-bottom: 5px;
   border-bottom: 1px solid $color-line;
+
   @include media-tablet {
     border-bottom: none;
   }
